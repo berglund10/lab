@@ -1,16 +1,15 @@
-import { Main } from "@/ui/layouts/";
-import { PageTitle } from "@/ui/text/pagetitle";
+import { Page } from "@/ui";
 
 const data = {
   name: "Johan",
   lastname: "Johansson"
 }
+// Only allow text to put in text: 
 
 export default function Home() {
   return (
-    <Main>
-    <PageTitle text="Member"/>
+    <Page title="Members">
     <pre>{JSON.stringify(data, null, 2)}</pre>
-    </Main>
+    </Page>
   );
 }
